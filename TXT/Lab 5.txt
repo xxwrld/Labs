@@ -1,0 +1,61 @@
+#зав1 в4
+
+a = float(input())
+x = float(input())
+n = float(input())
+i = 1
+k = (x + a) ** 2
+while i < n:
+    i += 1
+    k = (k + a) ** 2
+print(k)
+
+#зав2 в4
+
+n = input()
+k = 9
+c = 9
+for i in n:
+    k = int(i)
+    if k < c:
+        c = k
+print(c)
+
+#зав3 в4
+
+from math import factorial
+from math import log
+
+a = float(input())
+x = float(input())
+epsilon = float(input())
+degree_a = a ** x
+s = 0
+fraction1 = 1
+i = 0
+while fraction1 > epsilon:
+    i += 1
+    fraction2 = fraction1
+    s += fraction2
+    fraction1 = ((x * log(a)) ** i) / factorial(i)
+if degree_a == s:
+    print('true')
+else:
+    print('false')
+
+#зав4 в4
+
+n = float(input('n = '))
+x0 = 0
+x1 = 9
+i = 1
+if n == 1:
+    total = x1
+else:
+    while i < n:
+        i += 1
+        x2 = 2 * x1 + 3 * x0
+        x0 = x1
+        x1 = x2
+    total = x2
+print('x{0} = {1}'.format(n,total));

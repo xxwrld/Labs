@@ -1,0 +1,53 @@
+#Обчислити площу трикутника, якщо трикутник задано двома сторонами та кутом між ними.
+
+from math import sin
+a=float(input())
+b=float(input())
+c=float(input())
+total=((1/2)*a*b*(sin(c)))
+print(total)
+
+#Дано цілі число  . Визначити, чи належить   множині  .
+a = float(input())
+b = float(input())
+c = float(input())
+e = 3 <= a <= 9
+p = b <= a <= c
+if e or p:
+    print("True")
+else:
+    print("False")
+
+#Визначити, чи є трикутник тупокутним.
+
+from math import sqrt
+x1 = float(input())
+x2 = float(input())
+x3 = float(input())
+y1 = float(input())
+y2 = float(input())
+y3 = float(input())
+if (-1)<(x1+x2+y1+y2)/(sqrt((x1**2+y1**2)*(x2**2+y2**2)))<0:
+    print("Тупокутний")
+elif (-1)<(x2+x3+y2+y3)/(sqrt((x2**2+y2**2)*(x3**2+y3**2)))<0:
+    print("Тупокутний")
+elif (-1)<(x1+x3+y1+y3)/(sqrt((x1**2+y1**2)*(x3**2+y3**2)))<0:
+    print("Тупокутний")
+else:
+    print("Інше")
+
+#Знайти значення Y
+
+a = float(input())
+b = float(input())
+c = float(input())
+if a < b < c:
+    print("1")
+elif a == b == c:
+    print("2")
+elif b < a < c:
+    print("3")
+elif c < a < b:
+    print("4")
+else:
+    print("0")
