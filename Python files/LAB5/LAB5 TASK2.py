@@ -5,4 +5,4 @@ for i in n:
     k = int(i)
     if k < c:
         c = k
-print("Найменша цифра = "c)
+print("Найменша цифра = " c)

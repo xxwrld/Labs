@@ -1,6 +1,6 @@
-a = float(input())
-b = float(input())
-c = float(input())
+a = float(input("Введіть значення a :"))
+b = float(input("Введіть значення b :"))
+c = float(input("Введіть значення c :"))
 if a < b < c:
     print("1")
 elif a == b == c:
