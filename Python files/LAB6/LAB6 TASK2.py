@@ -8,6 +8,6 @@ for i in range(1, n):
 h = [el ** 2 for el in a if el > 0]
 m = [el ** 2 for el in a if el < 0]
 if sum(m) > sum(h):
-    print("z=-1")
-elif sum(m) < sum(h):
     print("z=1")
+elif sum(m) < sum(h):
+    print("z=-1")
