@@ -12,4 +12,4 @@ class Number:
         return len(list(self.a))
 
     def sum_digit_in_number(self):
-        return sum(list(map(float, list(self.a)))
+        return sum(list(map(float, list(self.a))))
